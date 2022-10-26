@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:layout_margin="8dp"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity">
+    tools:context=".activity.Activity_Login">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -35,7 +35,7 @@
         android:orientation="horizontal">
 
         <Button
-            android:id="@+id/btnNewClass"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
@@ -65,12 +65,12 @@
             android:text="Quản Lý Học SInh" />
 
         <Button
-            android:id="@+id/btLogout"
+            android:id="@+id/btmngAccount"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_margin="8dp"
             android:layout_weight="1"
-            android:text="Đăng Xuất"
-            android:layout_margin="8dp" />
+            android:text="Quản lý Tk" />
 
     </LinearLayout>
 

@@ -15,7 +15,7 @@ import com.example.doancuoiky.sqlite.ClassesDAO;
 
 public class NewClassDialog extends Dialog implements View.OnClickListener{
     private Context context;
-    private EditText etKP,etTO;
+    private EditText etP,etQ;
     public NewClassDialog(@NonNull Context context) {
         super(context);
         this.context = context;
@@ -26,8 +26,8 @@ public class NewClassDialog extends Dialog implements View.OnClickListener{
         super.onCreate(savedInstanceState);
         setContentView(R.layout.dialog_new_class);
 
-        etKP = findViewById(R.id.etKP);
-        etTO = findViewById(R.id.etTO);
+        etP = findViewById(R.id.etP);
+        etQ = findViewById(R.id.etQ);
 
 
         findViewById(R.id.btSave).setOnClickListener(this);
@@ -40,10 +40,11 @@ public class NewClassDialog extends Dialog implements View.OnClickListener{
 
             case R.id.btSave:
                 Classes cls = new Classes();
-                cls.setName(etTO.getText().toString());
+                cls.setName(etQ.getText().toString());
+
                 ClassesDAO dao = new ClassesDAO(context);
                 dao.insert(cls);
-                Toast.makeText(context,"Khu Phố Đã Được Lưu",Toast.LENGTH_SHORT).show();
+                Toast.makeText(context,"Phường Đã Được Lưu",Toast.LENGTH_SHORT).show();
                 dismiss();
             break;
 

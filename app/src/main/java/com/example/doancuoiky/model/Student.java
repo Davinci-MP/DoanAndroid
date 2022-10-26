@@ -7,12 +7,19 @@ public class Student {
     private String name;
     private Date dob;
     private int classId;
+    private String adDress;
+    private String school;
+
+
 
     public Student(String id, String name, Date dob, int classID) {
         this.id = id;
         this.name = name;
         this.dob = dob;
         this.classId = classID;
+        this.adDress = adDress;
+        this.school = school;
+
     }
 
     public Student() {
@@ -48,5 +55,21 @@ public class Student {
 
     public void setClassID(int classID) {
         this.classId = classID;
+    }
+
+    public String getAdDress() {
+        return adDress;
+    }
+
+    public void setAdDress(String adDress) {
+        this.adDress = adDress;
+    }
+
+    public String getSchool() {
+        return school;
+    }
+
+    public void setSchool(String school) {
+        this.school = school;
     }
 }

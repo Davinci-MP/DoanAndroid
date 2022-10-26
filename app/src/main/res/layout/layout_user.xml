@@ -4,8 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:layout_margin="8dp"
     android:orientation="vertical"
-    tools:context=".activity.MainActivity" >
+    tools:context=".activity.Activity_Login">
 
     <ImageView
         android:id="@+id/imageView2"
@@ -28,44 +29,42 @@
         android:textSize="20dp"
         android:textStyle="bold" />
 
-    <EditText
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:hint="Tên Đăng nhập"
-        android:minHeight="48dp" />
+        android:orientation="horizontal">
 
+        <Button
+            android:id="@+id/btnListClasses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Xem danh sách" />
 
-    <EditText
-        android:id="@+id/editTextTextPassword"
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:ems="10"
-        android:hint="Mật Khẩu"
-        android:inputType="textPassword"
-        android:minHeight="48dp" />
+        android:layout_height="match_parent">
 
-    <CheckBox
-        android:id="@+id/checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Ghi nhớ" />
+        <Button
+            android:id="@+id/btnManageStudents"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:layout_weight="1"
+            android:text="Xem thông tin" />
 
-    <Button
-        android:id="@+id/btnNewClass"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Đăng Nhập" />
+        <Button
+            android:id="@+id/btmngAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Đăng Xuất"
+            android:layout_margin="8dp" />
 
-    <Button
-        android:id="@+id/btlogin"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="8dp"
-        android:text="Đăng Ký" />
+    </LinearLayout>
 
 
 </LinearLayout>

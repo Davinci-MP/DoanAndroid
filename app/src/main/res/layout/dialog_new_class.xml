@@ -15,7 +15,7 @@
             android:layout_height="wrap_content"
             android:background="#BBA2D8"
             android:padding="8dp"
-            android:text="Nhập Trẻ Mới"
+            android:text="Nhập Phường,Quận"
             android:textAlignment="center"
             android:textAllCaps="true"
             android:textColor="#FFFFFF"
@@ -26,15 +26,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Khu Phố" />
+            android:text="Phường" />
 
         <EditText
-            android:id="@+id/etKP"
+            android:id="@+id/etP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:ems="10"
-            android:hint="Nhập Khu Phố"
+            android:hint="Nhập Phường"
             android:inputType="textPersonName" />
 
         <TextView
@@ -42,15 +42,15 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
-            android:text="Tổ" />
+            android:text="Quận" />
 
         <EditText
-            android:id="@+id/etTO"
+            android:id="@+id/etQ"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="8dp"
             android:ems="10"
-            android:hint="Nhập Tổ"
+            android:hint="Nhập Quận"
             android:inputType="textPersonName" />
     </LinearLayout>
 

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.Activity_Login" >
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="170dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp"
+        app:srcCompat="@drawable/logo_uef_te" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="53dp"
+        android:layout_gravity="center_vertical"
+        android:layout_margin="8dp"
+        android:gravity="center"
+        android:text="Ứng dụng quản lý trẻ em chưa vào lớp 1"
+        android:textAlignment="center"
+        android:textColor="#097A0F"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:hint="Tên Đăng nhập"
+        android:minHeight="48dp"
+        android:text="Admin" />
+
+
+    <EditText
+        android:id="@+id/edPassword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:ems="10"
+        android:hint="Mật Khẩu"
+        android:inputType="textPassword"
+        android:minHeight="48dp"
+        android:text="Admin" />
+
+    <CheckBox
+        android:id="@+id/chk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="saveUp"
+        android:text="Ghi nhớ" />
+
+    <Button
+        android:id="@+id/btnLogin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:onClick="checkLogin"
+        android:text="Đăng Nhập" />
+
+
+    <Button
+        android:id="@+id/btnSignUp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Đăng Ký" />
+
+
+</LinearLayout>

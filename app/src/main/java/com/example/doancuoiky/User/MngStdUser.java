@@ -1,4 +1,4 @@
-package com.example.doancuoiky.activity;
+package com.example.doancuoiky.User;
 
 import android.os.Bundle;
 import android.view.View;
@@ -22,7 +22,8 @@ import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 
-public class ManageStudentsActivity extends AppCompatActivity implements View.OnClickListener {
+
+public class MngStdUser extends AppCompatActivity implements View.OnClickListener {
     private EditText etStudentId, etName, etDob, etAddress;
     private Spinner spClasses;
     private List<Classes> classesList;
@@ -69,7 +70,7 @@ public class ManageStudentsActivity extends AppCompatActivity implements View.On
         spClasses.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
-                fillStudentsToListView();
+                //fillStudentsToListView();
             }
 
             @Override
